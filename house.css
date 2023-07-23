@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+:root{
+    --color:rgb(74, 74, 224);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: black;
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+header{
+    background-image: url(images/pexels-brett-sayles-2475277.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+}
+
+.nav-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo{
+    width: 50px;
+}
+
+.ul-list{
+    display: flex;
+    gap: 80px;
+    
+}
+
+.ul-list.active{
+    display: none;
+}
+
+.ul-list li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.ul-list span{
+    color: var(--color);
+}
+
+.ul-list a{
+    color: black;
+    text-decoration: none;
+}
+
+.request{
+    background-color: var(--color) ;
+    padding: 10px 30px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.open-nav {
+    width: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+.first-head-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+
+.second-big-head-text{
+    position: absolute;
+    left: 5%;
+}
+.second-big-head-text::after{
+    display: block;
+    height: 10px;
+    background-color: var(--color);
+    content: " ";
+    width: 150px;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 80px;
+    text-transform: capitalize;
+}
+h1 span{
+    color: var(--color);
+}
+
+
+
+
+/* -----------------------------------------------------------
+----------------------FIRST SECTION--------------------------- */
+
+.first-section{
+    margin-top: 50px;
+    padding: 20px;
+    /* clip-path: polygon(0 0,100% 0,100% 330vh,0 100%); */
+}
+
+h2{
+   text-transform: capitalize; 
+}
+
+h2::after{
+    display: block;
+    height: 10px;
+    background-color: var(--color);
+    content: " ";
+    width: 70px;
+    border-radius: 100px;
+    /* margin: 0 auto; */
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.pic-container{
+    display: flex;
+    gap: 40px;
+}
+
+.first-pic{
+    width: 50%;
+}
+
+.first-pic p{
+    font-size: medium;
+}
+
+.sub-pic-details-1 > p{
+    width: 100%;
+}
+
+.pic-1{
+    width: 600px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.other-pic-con{
+    width: 50%;
+    display: flex;
+}
+
+p{
+    font-size: small;
+}
+
+.pic-2,.pic-3,.pic-4,.pic-5{
+    width: 270px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* .sub-other-pic-1{
+}
+.sub-other-pic-2{
+} */
+
+.sub-pic-details-1,.sub-pic-details-2,
+.sub-pic-details-3,.sub-pic-details-4,.sub-pic-details-5{
+    position: relative;
+}
+
+.sub-pic-details-3,.sub-pic-details-5{
+    margin-top: 30px;
+}
+
+.name-tag-first{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.name-tag{
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.tag-1{
+    color: orange;
+    text-transform: uppercase;
+}
+.tag-2{
+    color: orangered;
+    text-transform: uppercase;
+}.tag-3{
+    color: blue;
+    text-transform: uppercase;
+}.tag-4{
+    color: skyblue;
+    text-transform: uppercase;
+}.tag-5{
+    color: violet;
+    text-transform: uppercase;
+}
+
+
+
+/* -----------------------------------------------------------
+----------------------SECOND SECTION--------------------------- */
+
+
+.second-section{
+    max-width: 1040px;
+    margin: 20px auto 0 auto;
+}
+
+h3{
+    text-align: center;
+    text-transform: capitalize;
+}
+h3::after{
+    display: block;
+    height: 10px;
+    background-color: var(--color);
+    content: " ";
+    width: 70px;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.second-pic-con{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.second-con--pic--1{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.read-more{
+    margin-top: 5px;
+    background-color: transparent;
+    padding: 5px 25px;
+    border: 1px solid rgb(80, 80, 80);
+    color: rgb(80, 80, 80);
+    border-radius: 100px;
+}
+
+.second-con-pic-con p{
+    margin-top: 5px;
+}
+
+.third-pic-con{
+    display: flex;
+    margin-top: 50px;
+}
+
+.third-con-pic-con-1{
+    width: 70%;
+}.third-con-pic-con-1 p{
+    width: 50%;
+}
+
+.third-con-pic-con-2{
+    width: 30%;
+}
+
+
+.third-con--pic--1{
+    width: 600px;
+    height: 500px;
+}.third-con--pic--2{
+    width: 300px;
+}
+
+.question{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.question > p{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reply-btn{
+    background-color: var(--color);
+    padding: 10px 30px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+
+
+
+/* -----------------------------------------------------------
+----------------------THIRD SECTION--------------------------- */
+
+.third-section{
+     /* margin: 0px; */
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 20px 50px 40px;
+
+}
+
+/* .sub-third-section{
+    margin-top: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+h4{
+    /* margin-top: 20px; */
+    text-transform: capitalize;
+    font-size: larger;
+    text-align: left;
+}
+h4:after{
+    display: block;
+    height: 10px;
+    background-color: var(--color);
+    content: " ";
+    width: 70px;
+    border-radius: 100px;
+    /* margin: 0 auto; */
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.facts-con{
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.facts-1,
+.facts-2,
+.facts-3 {
+    /* padding: 0px 50px 0px;
+    text-align: center; */
+    text-align: center;
+}
+.nums{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
+/* -----------------------------------------------------------
+----------------------FOOTER--------------------------- */
+
+
+
+footer{
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    background-color: rgb(17, 71, 187);
+    color: white;
+    background-color: rgb(17, 71, 187);
+}
+
+.sub-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-footer-list-1,.sub-footer-list-2{
+    /* display: block;
+    font-weight: 100;
+    text-transform: capitalize; */
+}
+
+.reach-out-directly,.footer-list-1,.footer-list-2{
+    display: block;
+    font-weight: 100;
+    text-transform: capitalize; 
+}
+
+footer li{
+    list-style: none;
+}
+
+.copyright{
+    text-align: center;
+}
+.copyright::before{
+    display: block;
+    height: 1px;
+    background-color: var(--color);
+    content: " ";
+    width: 1000px;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+
